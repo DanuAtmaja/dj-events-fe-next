@@ -1,7 +1,9 @@
 import Head from "next/head";
+import Header from "./header";
+import Footer from "./footer";
 import styles from "../styles/Layout.module.css";
 
-const Layout = ({ title, keywords, description, childern }) => {
+const Layout = ({ title, keywords, description, children }) => {
     return (
         <div>
             <Head>
@@ -10,9 +12,12 @@ const Layout = ({ title, keywords, description, childern }) => {
                 <meta name="keywords" content={keywords}/>
             </Head>
 
+            <Header />
             <div className={styles.container}>
-                {childern}
+                {children}
             </div>
+
+            <Footer />
         </div>
     );
 };
