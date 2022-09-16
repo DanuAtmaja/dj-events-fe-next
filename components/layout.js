@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "./header";
 import Footer from "./footer";
-import styles from "../styles/Layout.module.css";
+import styles from "@/styles/Layout.module.css";
 
 const Layout = ({ title, keywords, description, children }) => {
     return (
